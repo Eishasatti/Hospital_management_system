@@ -10,6 +10,7 @@ class User {
      int phoneno;
      String gender;
      void Login(){
+         System.out.println("hello world");
          
      }
      void Register(){
