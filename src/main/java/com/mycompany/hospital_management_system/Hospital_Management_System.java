@@ -27,10 +27,16 @@ class Doctor extends User{
    
     Boolean Availablility;
     
-    void Add_patient(){
+    void Add_Doctor(){
         
     }
-    void View_Schedule(){
+    void Update_dr_info(){
+        
+    }
+    void Delete_doctor(){
+        
+    }
+    void View_Availablity(){
     
 }
 }
