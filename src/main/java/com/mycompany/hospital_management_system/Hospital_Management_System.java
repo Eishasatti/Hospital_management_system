@@ -21,20 +21,10 @@ class User {
     
     
 }
-class Patient extends User{
-    Date last_visit;
-    String Disease;
-    void Book_Appointment(){
-        
-    }
-    void Med_History(){
-        
-    }
-    
-}
+
 class Doctor extends User{
     String specialization;
-    String Schedule;
+   
     Boolean Availablility;
     
     void Add_patient(){
@@ -47,10 +37,11 @@ class Doctor extends User{
 class Appointment {
     int app_id;
     String P_name;
-    Patient id;
+    Doctor id;
      String D_name;
      Date App_date;
      LocalTime App_time;
+     String Status;
      void Schedule(){
          
      }
@@ -60,15 +51,16 @@ class Appointment {
      void CancelApp(){
          
      }
-     void SearchApp(){
+     void ViewApp(){
          
      }
     
 }
 class Medical_Record{
     int M_id;
-    Patient id;
-    List<String> pastIllnesses;
+    String p_name;
+    int d_id;
+    Date visit_date;
     String Bloodpressure;
     double HeartRate;
     void Add_record(){
@@ -77,24 +69,12 @@ class Medical_Record{
     void Update_record(){
         
     }
-    void Search_Record(){
+    void view_Record(){
         
     }
     
 }
-class Schedule{
-    Doctor id;
-    int noofApp;
-     LocalTime off_time;
-    
-    void Display_Schedule(){
-        
-    }
-    void Change_Schedule(){
-        
-    }
-    
-}
+
 public class Hospital_Management_System {
 
     public static void main(String[] args) {
